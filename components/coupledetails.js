@@ -6,58 +6,116 @@ function CoupleDetails(props) {
     <div id="couple">
       <div className="couple container" data-aos="fade-up">
         <Flower />
-        <div className="couple-image">
-          <img src="/asset/couple.jpg" alt="couple.jpg" />
-        </div>
-        <div className="couple-name">
-          <div className="couple-name-girl">
-            <div className="girl-name">
-              <p>Arum Setyarini</p>
-            </div>
-            <div>
-              <p>Putri Pertama dari</p>
-            </div>
-            <div className="couple-parent">
-              <p>Bapak Suparmin</p>
-              <p>dan</p>
-              <p>Ibu Tunik Setiyani</p>
+        <div className="couple-image-wrapper">
+          <div
+            className="couple-image"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <img src="/asset/imoy.JPG" alt="couple.jpg" />
+            <div className="couple-image-ornamen">
+              <img src="/asset/ornamen-foto-couple.png" alt="couple.jpg" />
             </div>
           </div>
-          <div className="couple-name-boy">
+          <div
+            className="couple-name"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <div className="couple-name-girl">
+              <div className="girl-name">
+                <p>Kharisma Basri, S.Pd</p>
+              </div>
+              <div>
+                <p>Putri Kedua dari</p>
+              </div>
+              <div className="couple-parent">
+                <p>Bapak Basri</p>
+                <p>dan</p>
+                <p>Ibu Siswati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-out" data-aos-delay="500">
+          <p style={{ fontSize: "2em" }}>&</p>
+        </div>
+        <div className="couple-image-wrapper">
+          <div
+            className="couple-name-boy"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
             <div className="boy-name">
-              <p>Andi Saputro</p>
+              <p>Fachrul Rizky, Amd.T</p>
             </div>
             <div>
               <p>Putra Pertama dari</p>
             </div>
             <div className="couple-parent">
-              <p>Bapak Harsoyo</p>
+              <p>Bapak Bahrum</p>
               <p>dan</p>
-              <p>Ibu Sukatmi</p>
+              <p>Ibu Lilis</p>
             </div>
           </div>
-          <div className="love-story">
+          <div
+            className="couple-image"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
+            <img src="/asset/kiki.JPG" alt="couple.jpg" />
+            <div className="couple-image-ornamen">
+              <img src="/asset/ornamen-foto-couple.png" alt="couple.jpg" />
+            </div>
+          </div>
+          {/* <div className="love-story">
             <div
               className="love-story-button"
               onClick={() => props.setDisplayLoveStory(true)}
             >
               <p>Love Story</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <style jsx>{`
           .couple {
             margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
           }
+
+          .couple-image-wrapper {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            text-align: center;
+          }
+
           .couple-image {
             width: 100%;
-            display: flex;
             justify-content: center;
-            padding: 1rem;
+            position: relative;
           }
 
           .couple-image > img {
+            width: inherit;
+            border: 2px solid violet;
+          }
+
+          .couple-image-ornamen {
+            width: 110%;
+            position: absolute;
+            bottom: -2rem;
+            left: -0.8rem;
+          }
+
+          .couple-image-ornamen > img {
             width: inherit;
           }
 
@@ -79,8 +137,8 @@ function CoupleDetails(props) {
           .girl-name > p,
           .boy-name > p {
             font-family: "Great Vibes", serif;
-            letter-spacing: 0.245rem;
-            font-size: 2em;
+            letter-spacing: 0.15rem;
+            font-size: 1.5em;
             font-weight: bold;
           }
 

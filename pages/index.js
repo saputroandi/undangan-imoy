@@ -65,15 +65,17 @@ export default function Home() {
   return (
     <div className="home-wrapper">
       <ReactHowler
-        src={["/sound/MarryYourDaughter-BrianMcKnight(cut).mp3"]}
+        src={[
+          "/sound/MALIQ & D'Essentials - Pilihanku (Official Music Video) (mp3cut.net).mp3",
+        ]}
         playing={playing}
         loop={true}
         volume={0.18}
       />
       <div className="home">
-        <div className="image-top">
+        {/* <div className="image-top">
           <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
-        </div>
+        </div> */}
         <div className="home-background"></div>
 
         <Couple />
@@ -94,9 +96,9 @@ export default function Home() {
 
         <Ucapan />
 
-        <div className="image-bot">
+        {/* <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
-        </div>
+        </div> */}
 
         {/* Modal Component below */}
 
@@ -182,8 +184,8 @@ export default function Home() {
             width: 55%;
             // width: 14rem;
             position: absolute;
-            bottom: -2.8rem;
-            left: -3rem;
+            bottom: -1rem;
+            left: -1.8rem;
             z-index: 20;
           }
 

@@ -12,7 +12,7 @@ function Couple() {
 
   const timer = () => {
     const countDate = DateTime.fromFormat(
-      "March 27 2022 09:00:00",
+      "August 07 2022 08:00:00",
       "LLLL dd yyyy HH:mm:ss",
       {
         zone: "Asia/Jakarta",
@@ -38,15 +38,15 @@ function Couple() {
       <div className="couple">
         <div className="couple-wrapper">
           <div className="head" data-aos="fade-down" data-aos-delay="1800">
-            <p>Walimatul Ursy</p>
+            <p>The Wedding Of</p>
           </div>
           <div className="couple-name">
             <div
               className="couple-name-girl"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-delay="1800"
             >
-              <p>Arum</p>
+              <p>Kharisma Basri</p>
             </div>
             <div
               className="couple-name-and"
@@ -57,10 +57,10 @@ function Couple() {
             </div>
             <div
               className="couple-name-boy"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="1800"
             >
-              <p>Andi</p>
+              <p>Fachrul Rizky</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ function Couple() {
           display: flex;
           font-family: "Great Vibes", sans-serif;
           letter-spacing: 0.245rem;
-          font-size: 3.25rem;
+          font-size: 3rem;
           flex-direction: column;
           justify-content: space-evenly;
         }
@@ -113,10 +113,12 @@ function Couple() {
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 1rem;
         }
 
         .couple-name > * {
           letter-spacing: 0.375rem;
+          font-size: 2.5rem;
         }
 
         .event-schedule {

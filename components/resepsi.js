@@ -13,9 +13,8 @@ function Resepsi() {
           <p>Resepsi</p>
         </div>
         <div className="sesi">
-          <p>Sesi I: 10:00 - 12:00</p>
+          <p>Sesi I: 10:00 - 13:00</p>
           <p>Sesi II: 13:00 - 15:00</p>
-          <p>Sesi III: 15:00 - 17:00</p>
         </div>
         <div className="tanggal">
           <div className="tanggal-left-section">
@@ -23,14 +22,14 @@ function Resepsi() {
           </div>
           <div className="tanggal-middle-section">
             <div className="tanggal-middle-first-child">
-              <p>27</p>
+              <p>07</p>
             </div>
             <div className="tanggal-middle-last-child">
               <p>2022</p>
             </div>
           </div>
           <div className="tanggal-right-section">
-            <p>Maret</p>
+            <p>Agustus</p>
           </div>
         </div>
         <div className="alamat">
@@ -38,13 +37,10 @@ function Resepsi() {
             <p>Lokasi Acara:</p>
           </div>
           <div className="alamat-nama">
-            <p>Mesjid azzahratush shufiyyah</p>
+            <p>Gedung Raihan Islamic Village</p>
           </div>
           <div className="alamat-lengkap">
-            <p>
-              Jl. Peta Sel. Dalam rt.09/01, Kalideres, Kec. Kalideres, Kota
-              Jakarta Barat, Daerah Khusus Ibukota Jakarta 11840
-            </p>
+            <p>Kelapa Dua Tangerang - Banten</p>
           </div>
         </div>
       </div>

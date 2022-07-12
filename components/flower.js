@@ -4,7 +4,7 @@ function Flower() {
   return (
     <img
       className="flower"
-      src="/asset/btm-container-flower.png"
+      src="/asset/ornamen-frame-container.png"
       alt="btm-container-flower.png"
     />
   );

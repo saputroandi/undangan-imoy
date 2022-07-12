@@ -6,26 +6,34 @@ function WelcomePage(props) {
   const { to, sesi } = router.query;
   return (
     <div>
-      <Falling />
-      <div className="background"></div>
+      {/* <Falling /> */}
+      {/* <div className="background"></div> */}
       <div className="welcome-page">
-        <div className="header">
+        <div className="header" style={{ color: "rgb(211, 222, 220)" }}>
           <div className="initial" data-aos="fade-right" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Risma</h2>
           </div>
           <div className="divider" data-aos="fade-down" data-aos-delay="500">
             <h2>&</h2>
           </div>
           <div className="initial" data-aos="fade-left" data-aos-delay="500">
-            <h2>A</h2>
+            <h2>Kiky</h2>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          style={{ color: "rgb(211, 222, 220)" }}
+        >
           <p>
             <strong>Kepada Yth.</strong>
           </p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          style={{ color: "rgb(211, 222, 220)" }}
+        >
           <p>Bapak/Ibu/Saudara/i</p>
         </div>
         {to && (
@@ -34,13 +42,16 @@ function WelcomePage(props) {
             {sesi && <p>Sesi: {sesi}</p>}
           </div>
         )}
-        <div data-aos="fade-up" data-aos-delay="500">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          style={{ color: "rgb(211, 222, 220)" }}
+        >
           <p>di Tempat</p>
         </div>
         <div
           className="undangan-button"
           onClick={() => props.setDisplayWelcomePage(false)}
-          data-aos="zoom-out"
         >
           <p>Buka Undangan</p>
         </div>
@@ -67,6 +78,9 @@ function WelcomePage(props) {
           width: 100%;
           height: 100%;
           // background-color: rgb(254, 251, 243);
+          background-image: url("/asset/cover-undangan.jpg");
+          background-position: center;
+          background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -76,9 +90,12 @@ function WelcomePage(props) {
 
         .header {
           display: flex;
-          gap: 1rem;
-          height: 6rem;
-          font-size: 3em;
+          // gap: 1rem;
+          // height: 6rem;
+          font-size: 2.8em;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           font-family: "Alex Brush", cursive;
         }
 
@@ -104,17 +121,17 @@ function WelcomePage(props) {
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
 
-        .background {
-          z-index: 40;
-          background-color: rgb(254, 251, 243);
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-        }
+        // .background {
+        //   z-index: 40;
+        //   background-color: rgb(254, 251, 243);
+        //   position: absolute;
+        //   top: 0;
+        //   bottom: 0;
+        //   left: 0;
+        //   right: 0;
+        //   width: 100%;
+        //   height: 100%;
+        // }
 
         @keyframes welcome {
           0% {
