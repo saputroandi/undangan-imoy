@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { CSSTransition } from "react-transition-group";
-import ReactHowler from "react-howler";
 
 import Akad from "../components/akad";
 import Couple from "../components/couple";
@@ -19,6 +18,7 @@ import GiftIcon from "../components/giftIcon";
 import MusicIcon from "../components/musicIcon";
 import WelcomePage from "../components/welcomepage";
 import Navigation from "../components/navigation";
+import Gallery from "../components/gallery";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -26,6 +26,7 @@ export default function Home() {
   const [displayRekening, setDisplayRekening] = useState(false);
   const [displayLoveStory, setDisplayLoveStory] = useState(false);
   const [playing, setPlaying] = useState(true);
+  const audioRef = useRef();
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -39,6 +40,15 @@ export default function Home() {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", toggleVisible);
   }
+
+  const toggleMusic = (state) => {
+    setPlaying(state);
+    if (!playing) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  };
 
   useEffect(() => {
     AOS.init({
@@ -64,13 +74,10 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
-      <ReactHowler
-        src={[
-          "/sound/MALIQ & D'Essentials - Pilihanku (Official Music Video) (mp3cut.net).mp3",
-        ]}
-        playing={playing}
-        loop={true}
-        volume={0.18}
+      <audio
+        src="/sound/MALIQ & D'Essentials - Pilihanku (Official Music Video) (mp3cut.net).mp3"
+        autoPlay={true}
+        ref={audioRef}
       />
       <div className="home">
         {/* <div className="image-top">
@@ -96,6 +103,8 @@ export default function Home() {
 
         <Ucapan />
 
+        {/* <Gallery /> */}
+
         {/* <div className="image-bot">
           <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
         </div> */}
@@ -104,7 +113,7 @@ export default function Home() {
 
         <MusicIcon
           playing={playing}
-          setPlaying={(state) => setPlaying(state)}
+          setPlaying={(state) => toggleMusic(state)}
         />
 
         <CSSTransition in={visible} unmountOnExit timeout={0} classNames="fade">
@@ -155,6 +164,7 @@ export default function Home() {
       <style global jsx>
         {`
           @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alice&family=Great+Vibes&display=swap");
+          @import "~react-image-gallery/styles/css/image-gallery.css";
 
           * {
             padding: 0;

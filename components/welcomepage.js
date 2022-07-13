@@ -102,7 +102,7 @@ function WelcomePage(props) {
         .nama-tamu {
           width: 20rem;
           height: 8rem;
-          background-color: rgb(211, 222, 220);
+          background-color: rgba(211, 222, 220, 0.77);
           display: flex;
           align-items: center;
           justify-content: center;
