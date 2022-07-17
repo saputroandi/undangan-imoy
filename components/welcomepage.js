@@ -115,7 +115,7 @@ function WelcomePage(props) {
 
         .undangan-button {
           padding: 0.5rem 0.75rem;
-          background-color: rgb(191, 146, 112);
+          background-color: rgb(198, 137, 198);
           border-radius: 0.25rem;
           animation: welcome 1s linear 0s infinite alternate;
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;

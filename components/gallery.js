@@ -56,7 +56,6 @@ function Gallery() {
           </div> */}
           {/* <div className="thumbnail-image"> */}
           {images.map((obj, idx) => {
-            console.log(idx);
             return (
               // <div
               //   className="thumbnail"
@@ -64,6 +63,7 @@ function Gallery() {
               // ></div>
               <div
                 className="thumbnail"
+                key={idx}
                 // onClick={() => setDisplayimage(obj.image)}
                 data-aos={idx % 2 == 0 ? "fade-left" : "fade-right"}
                 data-aos-delay="500"
