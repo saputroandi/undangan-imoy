@@ -74,8 +74,8 @@ c0 -2 -11 -37 -24 -77 -13 -40 -32 -110 -42 -156 -24 -112 -14 -121 65 -59 33
           height: 2.75rem;
           display: flex;
           justify-content: center;
-          background-color: rgba(254, 251, 243);
-          border: 2px solid rgb(102, 51, 0);
+          background-color: rgba(252, 197, 192, 1);
+          border: 2px solid rgb(198, 137, 198);
           padding: 0.35rem;
           border-radius: 0.5rem;
           animation: gifticon 1.5s linear 0s infinite alternate;

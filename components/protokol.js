@@ -71,7 +71,7 @@ function Protokol() {
             flex: 15%;
             padding: 0.25rem;
             border-radius: 0.5rem;
-            background-color: rgb(244, 223, 186);
+            background-color: rgb(198, 137, 198);
           }
 
           .rules-icon > svg {

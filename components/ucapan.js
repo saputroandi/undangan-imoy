@@ -107,6 +107,10 @@ function Ucapan() {
         </div>
 
         <style jsx>{`
+          .ucapan {
+            margin-bottom: 3rem;
+          }
+
           .ucapan-wrapper {
             display: flex;
             flex-direction: column;
@@ -150,7 +154,7 @@ function Ucapan() {
           .ucapan-container {
             position: relative;
             border-radius: 0.25rem;
-            background-color: rgba(255, 255, 255, 0.75);
+            background-color: rgba(255, 255, 255, 0.5);
             height: 16rem;
             width: 100%;
             overflow: scroll;
@@ -169,7 +173,7 @@ function Ucapan() {
           }
 
           .ucapan-data {
-            background-color: rgb(191, 146, 112);
+            background-color: rgb(198, 137, 198);
             width: 95%;
             padding: 1rem;
             margin-bottom: 0.5rem;

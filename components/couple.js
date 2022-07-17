@@ -129,7 +129,7 @@ function Couple() {
           display: flex;
           gap: 0.5rem;
           padding: 0.75rem;
-          background-color: rgb(191, 146, 112);
+          background-color: rgb(198, 137, 198);
           text-align: center;
           border-radius: 0.5rem;
           font-size: 1rem;

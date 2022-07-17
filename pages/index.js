@@ -75,14 +75,14 @@ export default function Home() {
   return (
     <div className="home-wrapper">
       <audio
-        src="/sound/MALIQ & D'Essentials - Pilihanku (Official Music Video) (mp3cut.net).mp3"
+        src="/sound/Ed_Sheeran-Perfect.mp3"
         autoPlay={true}
         ref={audioRef}
       />
       <div className="home">
-        {/* <div className="image-top">
-          <img src="/asset/corner-flower-2.png" alt="corner-flower-2.png" />
-        </div> */}
+        <div className="image-top">
+          <img src="/asset/top_lavender.png" />
+        </div>
         <div className="home-background"></div>
 
         <Couple />
@@ -103,11 +103,11 @@ export default function Home() {
 
         <Ucapan />
 
-        {/* <Gallery /> */}
+        <Gallery />
 
-        {/* <div className="image-bot">
-          <img src="/asset/corner-flower-3.png" alt="corner-flower-3.png" />
-        </div> */}
+        <div className="image-bot">
+          <img src="/asset/bottom_lavender.png" />
+        </div>
 
         {/* Modal Component below */}
 
@@ -164,7 +164,7 @@ export default function Home() {
       <style global jsx>
         {`
           @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alice&family=Great+Vibes&display=swap");
-          @import "~react-image-gallery/styles/css/image-gallery.css";
+          // @import "~react-image-gallery/styles/css/image-gallery.css";
 
           * {
             padding: 0;
@@ -182,9 +182,9 @@ export default function Home() {
             position: relative;
             width: 86%;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.75);
+            background-color: rgba(252, 197, 192, 0.75);
             padding: 2.5rem 2rem;
-            border: 2px solid rgb(102, 51, 0);
+            border: 2px solid rgb(147, 125, 194);
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
               rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
             z-index: 10;
@@ -209,9 +209,9 @@ export default function Home() {
 
           .image-top {
             position: fixed;
-            width: 15rem;
-            top: -2rem;
-            left: -3rem;
+            width: 100vw;
+            top: 0;
+            left: 0;
             z-index: 1;
           }
 
@@ -220,9 +220,9 @@ export default function Home() {
           }
 
           .image-bot {
-            width: 13rem;
+            width: 50vw;
             position: fixed;
-            bottom: -3rem;
+            bottom: -1.25rem;
             right: 0;
             z-index: 1;
             overflow: hidden;
@@ -259,7 +259,7 @@ export default function Home() {
             width: 100vw;
             height: 100vh;
             z-index: -31;
-            background-color: rgb(244, 223, 186);
+            background-color: rgb(232, 160, 191);
             position: fixed;
             top: 0;
             right: 0;

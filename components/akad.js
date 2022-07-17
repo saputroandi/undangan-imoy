@@ -98,7 +98,7 @@ function Akad() {
             display: flex;
             align-items: center;
             gap: 1rem;
-            color: rgb(102, 51, 0);
+            // color: rgb(102, 51, 0);
           }
 
           .tanggal-left-section {
@@ -154,7 +154,7 @@ function Akad() {
 
           a {
             padding: 0.5rem 0.75rem;
-            background-color: rgb(191, 146, 112);
+            background-color: rgb(198, 137, 198);
             border-radius: 0.25rem;
             color: black;
             text-decoration: none; /* no underline */

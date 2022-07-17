@@ -73,7 +73,7 @@ function Resepsi() {
           display: flex;
           align-items: center;
           gap: 1rem;
-          color: rgb(102, 51, 0);
+          // color: rgb(102, 51, 0);
         }
 
         .tanggal-left-section {
