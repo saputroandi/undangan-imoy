@@ -109,6 +109,7 @@ function Gallery() {
           grid-template-rows: 38% 40% auto;
           justify-items: center;
           gap: 4px;
+          z-index: 5;
         }
 
         // .main-image {

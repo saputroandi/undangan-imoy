@@ -40,9 +40,14 @@ function Gift(props) {
           </div>
           <div className="rekening-wrapper">
             <div className="rekening">
-              <div className="icon">ICON HERE</div>
+              <div className="icon">
+                <img src="/asset/bca_icon.png" />
+              </div>
               <div className="owner">
                 a/n <strong>Kharisma</strong>
+              </div>
+              <div className="qr-code">
+                <img src="/asset/qrcode.jpeg" />
               </div>
               <div className="nomor-rekening">1060064926</div>
               <div
@@ -53,7 +58,7 @@ function Gift(props) {
                   <strong>{copyStatus ? "Tersalin" : "Salin Rekening"}</strong>
                 </a>
               </div>
-              <div className="icon">ICON HERE</div>
+              {/* <div className="icon">ICON HERE</div>
               <div className="owner">
                 a/n <strong>Kharisma</strong>
               </div>
@@ -65,7 +70,7 @@ function Gift(props) {
                 <a>
                   <strong>{copyStatus ? "Tersalin" : "Salin Rekening"}</strong>
                 </a>
-              </div>
+              </div> */}
               <div>
                 <p>
                   Perumahan Frensiana Garden, RW.52, Belian, Batam Kota (Blok C
@@ -142,10 +147,20 @@ function Gift(props) {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 1rem;
+          gap: 0.5rem;
           margin: auto;
           padding: 1rem 0;
           border-radius: 0.5rem;
+        }
+
+        .icon > img {
+          width: 10rem;
+          height: auto;
+        }
+
+        .qr-code > img {
+          width: 18rem;
+          height: auto;
         }
 
         .owner {

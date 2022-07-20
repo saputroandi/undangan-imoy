@@ -53,9 +53,9 @@ function CoupleDetails(props) {
               <p>Putra Pertama dari</p>
             </div>
             <div className="couple-parent">
-              <p>Bapak Bahrum</p>
+              <p>Bapak Bahrum Simanjuntak</p>
               <p>dan</p>
-              <p>Ibu Lilis</p>
+              <p>Ibu Lilis Sitohang</p>
             </div>
           </div>
           <div
@@ -137,8 +137,8 @@ function CoupleDetails(props) {
           .girl-name > p,
           .boy-name > p {
             font-family: "Great Vibes", serif;
-            letter-spacing: 0.15rem;
-            font-size: 1.5em;
+            letter-spacing: 0.2rem;
+            font-size: 1.75em;
             font-weight: bold;
           }
 

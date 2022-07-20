@@ -18,7 +18,7 @@ function Akad() {
               <p>Pukul:</p>
             </div>
             <div>
-              <p>{"08:00 : 10:00"} WIB</p>
+              <p>{"08:00 - 10:00"} WIB</p>
             </div>
           </div>
           <div className="tanggal">
@@ -150,6 +150,7 @@ function Akad() {
 
           .live-button {
             margin-top: 0.5rem;
+            z-index: 5;
           }
 
           a {

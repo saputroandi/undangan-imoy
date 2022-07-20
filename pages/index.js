@@ -19,6 +19,7 @@ import MusicIcon from "../components/musicIcon";
 import WelcomePage from "../components/welcomepage";
 import Navigation from "../components/navigation";
 import Gallery from "../components/gallery";
+import Head from "next/head";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -78,7 +79,37 @@ export default function Home() {
         src="/sound/Ed_Sheeran-Perfect.mp3"
         autoPlay={true}
         ref={audioRef}
+        loop={true}
       />
+
+      <Head>
+        <meta property="og:title" content="Kharisma & Rizky" />
+        <meta name="twitter:title" content="Kharisma & Rizky" />
+
+        <meta name="description" content="The Wedding of Kharisma & Rizky" />
+        <meta
+          property="og:description"
+          content="The Wedding of Kharisma & Rizky"
+        />
+        <meta
+          name="twitter:description"
+          content="The Wedding of Kharisma & Rizky"
+        />
+
+        <meta
+          property="og:image"
+          content="https://kharisma-rizky.vercel.app/asset/cover-undangan.jpg"
+        />
+        <meta
+          name="twitter:image"
+          content="https://kharisma-rizky.vercel.app/asset/cover-undangan.jpg"
+        />
+
+        <link rel="icon" href="/asset/bouquet.png" />
+
+        <title>Kharisma & Rizky</title>
+      </Head>
+
       <div className="home">
         <div className="image-top">
           <img src="/asset/top_lavender.png" />
@@ -196,7 +227,7 @@ export default function Home() {
             position: absolute;
             bottom: -1rem;
             left: -1.8rem;
-            z-index: 20;
+            z-index: 0;
           }
 
           .home {

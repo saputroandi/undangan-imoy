@@ -4,8 +4,8 @@
     "name": "undanganimoy"
   },
   "api": {
-    "projectId": "wajxws62",
-    "dataset": "undangan"
+    "projectId": "mofmlsk1",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",

@@ -30,16 +30,16 @@ function Ucapan() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // if (pesanBaru.nama.length > 0 && pesanBaru.pesan.length > 0) {
-    //   await sanityClient.create({
-    //     _id: ts,
-    //     _type: "ucapan",
-    //     sender: pesanBaru.nama,
-    //     pesan: pesanBaru.pesan,
-    //   });
-    //   setPesanBaru(initialState);
-    //   handleFetch();
-    // }
+    if (pesanBaru.nama.length > 0 && pesanBaru.pesan.length > 0) {
+      await sanityClient.create({
+        _id: ts,
+        _type: "ucapan",
+        sender: pesanBaru.nama,
+        pesan: pesanBaru.pesan,
+      });
+      setPesanBaru(initialState);
+      handleFetch();
+    }
     setWrite(true);
     alert("message submitted");
   };

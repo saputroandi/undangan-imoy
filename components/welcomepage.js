@@ -136,11 +136,11 @@ function WelcomePage(props) {
         @keyframes welcome {
           0% {
             transform: scale(1);
-            background-color: rgb(191, 146, 112);
+            background-color: rgb(147, 125, 194);
           }
           100% {
             transform: scale(1.05);
-            background-color: rgb(206, 171, 147);
+            background-color: rgb(198, 137, 198);
           }
         }
       `}</style>
