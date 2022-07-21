@@ -7,7 +7,7 @@ function WelcomePage(props) {
   return (
     <div>
       {/* <Falling /> */}
-      {/* <div className="background"></div> */}
+      <div className="background"></div>
       <div className="welcome-page">
         <div className="header" style={{ color: "rgb(211, 222, 220)" }}>
           <div className="initial" data-aos="fade-right" data-aos-delay="500">
@@ -78,14 +78,18 @@ function WelcomePage(props) {
           width: 100%;
           height: 100%;
           // background-color: rgb(254, 251, 243);
-          background-image: url("/asset/cover-undangan.jpg");
-          background-position: center;
-          background-size: cover;
+          // background-image: url("/asset/gambar_1.JPG");
+          // background-position: center;
+          // background-size: cover;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           gap: 0.5rem;
+          background-image: linear-gradient(
+            rgba(0, 0, 0, 0),
+            rgba(198, 137, 198, 0.85)
+          );
         }
 
         .header {
@@ -121,17 +125,20 @@ function WelcomePage(props) {
           box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
 
-        // .background {
-        //   z-index: 40;
-        //   background-color: rgb(254, 251, 243);
-        //   position: absolute;
-        //   top: 0;
-        //   bottom: 0;
-        //   left: 0;
-        //   right: 0;
-        //   width: 100%;
-        //   height: 100%;
-        // }
+        .background {
+          //   z-index: 40;
+          //   background-color: rgb(254, 251, 243);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-image: url("/asset/gambar_1.JPG");
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
 
         @keyframes welcome {
           0% {

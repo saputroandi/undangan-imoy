@@ -5,9 +5,9 @@ import ModalGallery from "./modalGallery";
 
 function Gallery() {
   const images = [
-    {
-      image: "gambar_1.JPG",
-    },
+    // {
+    //   image: "gambar_1.JPG",
+    // },
     {
       image: "gambar_3.JPG",
     },
@@ -106,7 +106,7 @@ function Gallery() {
           // gap: 0.5rem;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: 38% 40% auto;
+          grid-template-rows: auto;
           justify-items: center;
           gap: 4px;
           z-index: 5;
@@ -152,6 +152,7 @@ function Gallery() {
           // overflow: hidden;
           // margin: 0 0.5rem;
           border: 1px solid violet;
+          overflow: hidden;
         }
 
         .thumbnail > img {
@@ -160,6 +161,8 @@ function Gallery() {
           display: block;
           width: 100%;
           height: auto;
+          object-fit: cover;
+          object-position: 45% 100%;
         }
       `}</style>
     </div>

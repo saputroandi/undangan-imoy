@@ -75,12 +75,12 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
-      <audio
+      {/* <audio
         src="/sound/Ed_Sheeran-Perfect.mp3"
         autoPlay={true}
         ref={audioRef}
         loop={true}
-      />
+      /> */}
 
       <Head>
         <meta property="og:title" content="Kharisma & Rizky" />
@@ -98,11 +98,11 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://kharisma-rizky.vercel.app/asset/cover-undangan.jpg"
+          content="https://kharisma-rizky.vercel.app/asset/cover-undangan-cropped.jpg"
         />
         <meta
           name="twitter:image"
-          content="https://kharisma-rizky.vercel.app/asset/cover-undangan.jpg"
+          content="https://kharisma-rizky.vercel.app/asset/cover-undangan-cropped.jpg"
         />
 
         <link rel="icon" href="/asset/bouquet.png" />
