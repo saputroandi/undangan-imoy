@@ -20,6 +20,7 @@ import WelcomePage from "../components/welcomepage";
 import Navigation from "../components/navigation";
 import Gallery from "../components/gallery";
 import Head from "next/head";
+import Footer from "../components/footer";
 
 export default function Home() {
   const [visible, setVisible] = useState(false);
@@ -135,6 +136,8 @@ export default function Home() {
         <Ucapan />
 
         <Gallery />
+
+        <Footer />
 
         <div className="image-bot">
           <img src="/asset/bottom_lavender.png" />
