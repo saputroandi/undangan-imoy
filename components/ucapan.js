@@ -30,6 +30,7 @@ function Ucapan() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setWrite(true);
     if (pesanBaru.nama.length > 0 && pesanBaru.pesan.length > 0) {
       await sanityClient.create({
         _id: ts,
@@ -40,8 +41,7 @@ function Ucapan() {
       setPesanBaru(initialState);
       handleFetch();
     }
-    setWrite(true);
-    alert("message submitted");
+    // alert("message submitted");
   };
 
   useEffect(() => {
