@@ -75,12 +75,12 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
-      {/* <audio
+      <audio
         src="/sound/Ed_Sheeran-Perfect.mp3"
         autoPlay={true}
         ref={audioRef}
         loop={true}
-      /> */}
+      />
 
       <Head>
         <meta property="og:title" content="Kharisma & Rizky" />
